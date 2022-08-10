@@ -64,7 +64,7 @@ public class MyHeap<E> {
     }
     public void update(E oldValue, E newValue) {
         Integer index = getIndex(oldValue);
-        if (index == null) throw new NoSuchElementException("The old value doesn't exist in the minHeap");
+        if (index == null) throw new NoSuchElementException("The old value doesn't exist in the Heap");
         updateByIndex(index, oldValue, newValue);
     }
     public E peek() {
